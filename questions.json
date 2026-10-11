@@ -1,0 +1,63 @@
+[
+  {
+    "question": "How do I make a query parameter optional?",
+    "expect": [
+      "you can declare optional query parameters",
+      "q: str | None = None"
+    ],
+    "note": "uses the docs' own words"
+  },
+  {
+    "question": "How do I stop a URL parameter from being mandatory?",
+    "expect": [
+      "you can declare optional query parameters",
+      "q: str | None = None"
+    ],
+    "note": "same answer, different words. Keyword search failed this one on the phone"
+  },
+  {
+    "question": "Which values count as True for a bool query parameter?",
+    "expect": [
+      "short=on",
+      "short=yes"
+    ],
+    "note": "the whole answer sits in one chunk"
+  },
+  {
+    "question": "How do I return a 404 error when an item isn't found?",
+    "expect": [
+      "Handling Errors > Use `HTTPException`",
+      "status_code=404"
+    ],
+    "note": ""
+  },
+  {
+    "question": "How do I send an error response to the client?",
+    "expect": [
+      "raise HTTPException",
+      "Raise an `HTTPException` in your code"
+    ],
+    "note": "paraphrase of the previous question"
+  },
+  {
+    "question": "How do I run something after the response has been sent?",
+    "expect": [
+      "add_task"
+    ],
+    "note": "background tasks, never named in the question"
+  },
+  {
+    "question": "How do I receive JSON data in a POST request?",
+    "expect": [
+      "Request Body >",
+      "class Item(BaseModel)",
+      "@app.post"
+    ],
+    "note": "request body, never named in the question"
+  },
+  {
+    "question": "Who created FastAPI?",
+    "expect": null,
+    "note": "NOT in the tutorial. Nothing should count as a hit; check the scores by eye"
+  }
+]

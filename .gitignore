@@ -1,0 +1,8 @@
+fastapi/
+rag_db/
+.venv/
+__pycache__/
+last_prompt.txt
+
+*.md
+!README.md

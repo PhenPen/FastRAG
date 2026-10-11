@@ -1,0 +1,5 @@
+# The ChromaDB calls in index.py / search.py were tested against chromadb 1.5.9.
+# The embedding model itself could not be downloaded in the test environment, so
+# sentence-transformers is only lower-bounded and the real model is untested by the author.
+sentence-transformers>=3.0
+chromadb>=1.0
